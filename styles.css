@@ -221,3 +221,52 @@ nav .logout-btn:hover {
     height: calc(100vh - 80px); /* Adjust for the height of the navbar */
     text-align: center;
 }
+/* Form Container */
+.form-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: calc(100vh - 80px); /* Adjust for the height of the navbar */
+    text-align: center;
+}
+
+.form-container h1 {
+    margin-bottom: 30px;
+    color: #333;
+}
+
+.form-container form {
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+}
+
+.form-container label {
+    margin-bottom: 10px;
+    color: #333;
+    text-align: left;
+}
+
+.form-container input,
+.form-container textarea {
+    margin-bottom: 15px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+.form-container button {
+    padding: 15px;
+    background-color: #2196F3;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.form-container button:hover {
+    background-color: #1976D2;
+}
