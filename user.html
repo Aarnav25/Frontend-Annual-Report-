@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Dashboard</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <nav>
+        <div class="logo">
+            <img src="https://assets.onecompiler.app/42q89985t/42qasq4tf/images-2.jpeg" alt="Institute Logo">
+        </div>
+        <ul>
+            <li><a href="#">MY REPORTS</a></li>
+        </ul>
+        <button class="logout-btn" onclick="logout()">Logout</button>
+    </nav>
+
+    <section class="dashboard">
+        <h1>User Dashboard</h1>
+        <p>Welcome! You can create and manage your departmental reports here.</p>
+        
+        <!-- Action Buttons -->
+        <div class="action-buttons">
+            <button onclick="createForm()">Create a Form</button>
+            <button onclick="viewReport()">View Report</button>
+        </div>
+    </section>
+    
+    <script src="script.js"></script>
+</body>
+</html>
