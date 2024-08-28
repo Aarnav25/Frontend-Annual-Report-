@@ -9,20 +9,36 @@
 <body>
     <nav>
         <div class="logo">
-            <img src="https://assets.onecompiler.app/42q89985t/42q8ecwsq/images.jpeg" alt="Institute Logo">
+            <img src="https://assets.onecompiler.app/42q89985t/42qasq4tf/images-2.jpeg" alt="Institute Logo">
         </div>
-        <ul>
-            <li><a href="#">Manage Departments</a></li>
-            <li><a href="#">Manage Users</a></li>
-            <li><a href="#">Manage Reports</a></li>
-            <li><a href="#">Settings</a></li>
-        </ul>
         <button class="logout-btn" onclick="logout()">Logout</button>
     </nav>
 
     <section class="dashboard">
         <h1>Admin Dashboard</h1>
-        <p>Welcome, Admin! You can manage departments, users, and reports here.</p>
+        <p>Welcome! You can manage departmental reports here.</p>
+        
+        <!-- Search Bar -->
+        <div class="search-bar">
+            <input type="text" id="search" placeholder="Search reports...">
+        </div>
+
+        <!-- Department Dropdown -->
+        <div class="department-dropdown">
+            <label for="departments">Select Department:</label>
+            <select id="departments">
+                <option value="cse-core">CSE (Core)</option>
+                <option value="cse-aiml">CSE AIML</option>
+                <option value="cs-ds">CS DS</option>
+                <option value="cs-iot">CS IOT</option>
+                <option value="cs-it">CS IT</option>
+                <option value="ece">ECE</option>
+                <option value="eee">EEE</option>
+                <option value="aiml">AIML</option>
+                <option value="civil">CIVIL</option>
+                <option value="mechanical">MECHANICAL</option>
+            </select>
+        </div>
     </section>
     
     <script src="script.js"></script>
