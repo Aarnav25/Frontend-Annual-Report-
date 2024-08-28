@@ -21,11 +21,42 @@
         <h1>User Dashboard</h1>
         <p>Welcome! You can create and manage your departmental reports here.</p>
         
-        <!-- Action Buttons -->
-        <div class="action-buttons">
-            <button onclick="createForm()">Create a Form</button>
-            <button onclick="viewReport()">View Report</button>
+        <!-- Fixed Questionnaire -->
+        <div class="questionnaire">
+            <h2>Departmental Questions</h2>
+            <form id="questionnaireForm">
+                <label for="numStudents">1. Number of students:</label>
+                <input type="number" id="numStudents" name="numStudents" required>
+
+                <label for="deptAvg">2. Department average:</label>
+                <input type="number" id="deptAvg" name="deptAvg" required step="0.01">
+
+                <label for="publications">3. Publications if any:</label>
+                <textarea id="publications" name="publications" rows="3"></textarea>
+
+                <label for="patents">4. Patents if any:</label>
+                <textarea id="patents" name="patents" rows="3"></textarea>
+
+                <label for="achievements">5. Achievements if any:</label>
+                <textarea id="achievements" name="achievements" rows="3"></textarea>
+
+                <label for="awards">6. Awards:</label>
+                <textarea id="awards" name="awards" rows="3"></textarea>
+
+                <label for="alumniAchievements">7. Alumni achievements:</label>
+                <textarea id="alumniAchievements" name="alumniAchievements" rows="3"></textarea>
+
+                <label for="startups">8. Any startups:</label>
+                <textarea id="startups" name="startups" rows="3"></textarea>
+
+                <button type="submit">Submit</button>
+            </form>
         </div>
+
+       
+        
+        <!-- View Report Button at the Bottom -->
+        <button class="view-report-btn" onclick="viewReport()">View Report</button>
     </section>
     
     <script src="script.js"></script>
