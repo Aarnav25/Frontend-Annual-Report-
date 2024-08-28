@@ -25,28 +25,31 @@
         <div class="questionnaire">
             <h2>Departmental Questions</h2>
             <form id="questionnaireForm">
-                <label for="numStudents">1. Number of students:</label>
+               <label for="dep">1. Department:</label>
+                <input type="dep" id="dep" name="numStudents" required>
+                
+                <label for="numStudents">2. Number of students:</label>
                 <input type="number" id="numStudents" name="numStudents" required>
 
-                <label for="deptAvg">2. Department average:</label>
+                <label for="deptAvg">3. Department average:</label>
                 <input type="number" id="deptAvg" name="deptAvg" required step="0.01">
 
-                <label for="publications">3. Publications if any:</label>
+                <label for="publications">4. Publications if any:</label>
                 <textarea id="publications" name="publications" rows="3"></textarea>
 
-                <label for="patents">4. Patents if any:</label>
+                <label for="patents">5. Patents if any:</label>
                 <textarea id="patents" name="patents" rows="3"></textarea>
 
-                <label for="achievements">5. Achievements if any:</label>
+                <label for="achievements">6. Achievements if any:</label>
                 <textarea id="achievements" name="achievements" rows="3"></textarea>
 
-                <label for="awards">6. Awards:</label>
+                <label for="awards">7. Awards:</label>
                 <textarea id="awards" name="awards" rows="3"></textarea>
 
-                <label for="alumniAchievements">7. Alumni achievements:</label>
+                <label for="alumniAchievements">8. Alumni achievements:</label>
                 <textarea id="alumniAchievements" name="alumniAchievements" rows="3"></textarea>
 
-                <label for="startups">8. Any startups:</label>
+                <label for="startups">9. Any startups:</label>
                 <textarea id="startups" name="startups" rows="3"></textarea>
 
                 <button type="submit">Submit</button>
